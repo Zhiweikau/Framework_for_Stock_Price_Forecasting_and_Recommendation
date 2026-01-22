@@ -4,4 +4,6 @@ numpy
 matplotlib
 scikit-learn
 xgboost
+
 joblib
+python-3.11
