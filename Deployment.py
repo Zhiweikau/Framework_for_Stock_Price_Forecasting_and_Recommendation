@@ -6,8 +6,8 @@ import joblib
 from sklearn.ensemble import IsolationForest
 from xgboost import XGBRegressor
 
-trainval_path = "Dataset/Model/XGBoost/xgb__trainval_bundle.joblib"
-full_path = "Dataset/Model/XGBoost/xgb_full_bundle.joblib"
+trainval_path = "Model/XGBoost/xgb__trainval_bundle.joblib"
+full_path = "Model/XGBoost/xgb_full_bundle.joblib"
 
 FEATURES_EXP_C = ["Close", "MA10", "MA20", "MA50", "RSI"]
 
@@ -340,7 +340,7 @@ BEST_PARAMS = {
     "colsample_bytree": 0.9
 }
 
-bundle_path = "./Dataset/Model/XGBoost/xgb_full_bundle.joblib"
+bundle_path = "./Model/XGBoost/xgb_full_bundle.joblib"
 bundle = joblib.load(bundle_path)
 model_full = bundle["model"]
 
